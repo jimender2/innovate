@@ -4,17 +4,13 @@
 package innovate;
 
 /**
- * @author Jonathan Meredith
+ * @author Jonathan Meredith and Joseph Calbrese
  *
  */
 public class innovate {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 }
