@@ -20,21 +20,33 @@ public class innovate {
 		//Boolean
 		boolean playGame;
 		
-		//Does the user want to play??
-		playGame = false;
-		do {
-		input = JOptionPane.showInputDialog("Do you want to play the game?");
-		
-		input = input.toLowerCase();
-		if(input.charAt(0) == 'y') {
-			playGame = true;
-		} else if (input.charAt(0) == 'n') {
-			System.exit(0);
-		} else {
-			playGame = false;
-		}
-		
-		} while (playGame == false);
+		playGame();
 	}
-
+	
+	private static void playGame(){
+		//Declare Variables
+		
+		//String
+		String input;
+		
+		//Boolean
+		boolean playGame;
+		
+		//Does the user want to play??
+				playGame = false;
+				do {
+				input = JOptionPane.showInputDialog("Do you want to play "
+						+ "the game? Y/N");
+				
+				input = input.toLowerCase();
+				if(input.charAt(0) == 'y') {
+					playGame = true;
+				} else if (input.charAt(0) == 'n') {
+					System.exit(0);
+				} else {
+					playGame = false;
+				}
+				
+				} while (playGame == false);
+	}
 }
