@@ -12,7 +12,7 @@ public class innovate {
 		//Declare Variables here
 		//Strings
 		String input,
-			field;
+			field[];
 		
 		//Integers
 		int move;
@@ -20,7 +20,9 @@ public class innovate {
 		//Boolean
 		boolean playGame;
 		
-		playGame();
+		//playGame();
+		field = createWorld();
+		System.out.println(field);
 	}
 	
 	private static void playGame(){
@@ -48,5 +50,10 @@ public class innovate {
 				}
 				
 				} while (playGame == false);
+	}
+	
+	private static String[] createWorld(){
+		String world[] = {"x"};
+		return world;
 	}
 }
